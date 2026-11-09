@@ -6,3 +6,5 @@
 - [x] Include GP care, IV drip services, doctor information, and contact details.
 - [x] Verify page navigation, contact actions, and phone-sized layouts.
 - [x] Use the uploaded IV services photo, slim navigation, round buttons, remove the home doctor section, and enlarge the wellness feature.
+
+- [x] Animate the six Our services entries on scroll and hover, with reduced-motion support.

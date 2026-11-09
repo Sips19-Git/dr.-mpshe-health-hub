@@ -16,7 +16,7 @@ export function ScrollReveals() {
       });
     }, { threshold: 0.06 });
     elements.forEach((element, i) => {
-      if (element.getBoundingClientRect().top < window.innerHeight) return;
+      if (element.getBoundingClientRect().top < window.innerHeight && !element.classList.contains('service-entry')) return;
       element.classList.add('scroll-reveal');
       element.style.setProperty('--reveal-delay', `${(i % 3) * 90}ms`);
       observer.observe(element);
