@@ -4,10 +4,9 @@ import { ArrowUpRight, ArrowRight, Phone, Menu, X, Stethoscope, MapPin } from 'l
 import { Button } from '@/components/ui/button';
 import { practice } from '@/lib/practice';
 import { PracticeMap } from '@/components/practice-map';
-import practiceLogo from '@/assets/practice-logo.jpg.asset.json';
 
 export function Brand({ uploaded = false }: { uploaded?: boolean }) {
-  if (uploaded) return <Link to="/" className="brand" aria-label="Dr E. L. Mpshe Surgery home"><img src={practiceLogo.url} alt="Dr E. L. Mpshe Surgery" width={158} height={71} className="h-11 w-auto max-w-40 object-contain" /></Link>;
+  if (uploaded) return <Link to="/" className="brand reference-logo" aria-label="Dr E. L. Mpshe Surgery home"><svg className="reference-logo-symbol" viewBox="0 0 48 40" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M17 4h12a16 16 0 1 1-12 27H7V21H3v-6h5V4h9Z" /><path d="M31 13a9 9 0 1 0 0 14M13 20h9" /></svg><span className="reference-logo-name">Dr. E. L. Mpshe</span><small>Surgery</small></Link>;
   return <Link to="/" className="brand" aria-label="Dr E. L. Mpshe Surgery home"><span className="brand-symbol"><Stethoscope size={27} strokeWidth={1.7} /></span><span>Dr E. L. Mpshe<small>Medical Surgery</small></span></Link>;
 }
 
