@@ -9,5 +9,5 @@
 
 - [x] Animate the six Our services entries on scroll and hover, with reduced-motion support.
 
-- [ ] Match favicon to the live logo and animate the two doctor background entries.
-- [ ] Optimize images and verify all pages at phone, tablet, and desktop sizes.
+- [x] Match favicon to the live logo and animate the two doctor background entries.
+- [x] Optimize images and verify all pages at phone, tablet, and desktop sizes.
