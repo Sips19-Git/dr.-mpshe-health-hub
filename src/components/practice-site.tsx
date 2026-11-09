@@ -4,15 +4,17 @@ import { ArrowUpRight, ArrowRight, Phone, Menu, X, Stethoscope, MapPin } from 'l
 import { Button } from '@/components/ui/button';
 import { practice } from '@/lib/practice';
 import { PracticeMap } from '@/components/practice-map';
+import practiceLogo from '@/assets/practice-logo.jpg.asset.json';
 
-export function Brand() {
+export function Brand({ uploaded = false }: { uploaded?: boolean }) {
+  if (uploaded) return <Link to="/" className="brand" aria-label="Dr E. L. Mpshe Surgery home"><img src={practiceLogo.url} alt="Dr E. L. Mpshe Surgery" width={158} height={71} className="h-11 w-auto max-w-40 object-contain" /></Link>;
   return <Link to="/" className="brand" aria-label="Dr E. L. Mpshe Surgery home"><span className="brand-symbol"><Stethoscope size={27} strokeWidth={1.7} /></span><span>Dr E. L. Mpshe<small>Medical Surgery</small></span></Link>;
 }
 
 export function SiteHeader() {
   const [open, setOpen] = useState(false);
   const links = <><Link to="/" activeOptions={{ exact: true }} onClick={() => setOpen(false)}>Home</Link><Link to="/services" onClick={() => setOpen(false)}>Our services</Link><Link to="/iv-drips" onClick={() => setOpen(false)}>IV drips</Link><Link to="/about" onClick={() => setOpen(false)}>Meet the doctor</Link><Link to="/contact" onClick={() => setOpen(false)}>Contact</Link></>;
-  return <div className="navigation-float"><header className="site-header"><Brand /><nav className="desktop-nav" aria-label="Main navigation">{links}</nav><div className="header-actions"><Button asChild size="lg" className="header-book"><a href={practice.phoneHref}>Book a visit <ArrowUpRight /></a></Button><Button variant="ghost" size="icon" className="mobile-menu-button" aria-label={open ? 'Close menu' : 'Open menu'} aria-expanded={open} onClick={() => setOpen(!open)}>{open ? <X /> : <Menu />}</Button></div></header>{open && <nav className="mobile-nav" aria-label="Mobile navigation">{links}<a href={practice.phoneHref}>Call to book a visit</a></nav>}</div>;
+  return <div className="navigation-float"><header className="site-header"><Brand uploaded /><nav className="desktop-nav" aria-label="Main navigation">{links}</nav><div className="header-actions"><Button asChild size="lg" className="header-book"><a href={practice.phoneHref}>Book a visit <ArrowUpRight /></a></Button><Button variant="ghost" size="icon" className="mobile-menu-button" aria-label={open ? 'Close menu' : 'Open menu'} aria-expanded={open} onClick={() => setOpen(!open)}>{open ? <X /> : <Menu />}</Button></div></header>{open && <nav className="mobile-nav" aria-label="Mobile navigation">{links}<a href={practice.phoneHref}>Call to book a visit</a></nav>}</div>;
 }
 
 export function Eyebrow({ children }: { children: React.ReactNode }) {
