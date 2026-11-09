@@ -15,3 +15,4 @@
 - Render the practice location through a shared Google Maps Embed component using only the connector's public browser key; no server-side geographic lookup is needed for a fixed address.
 - Coordinate scroll reveals in a route-aware observer with visible SSR defaults and reduced-motion handling; never intercept native wheel or touch scrolling.
 - Render the reference-based navigation logo as live text and an inline SVG symbol so it stays sharp at compact sizes.
+- Serve practice photographs through the shared responsive image component with CDN WebP variants, reserving eager loading for the home cover to reduce transfer size and decoding delays.
