@@ -202,6 +202,7 @@ a,button { -webkit-tap-highlight-color: transparent; }
 .service-link {display:flex;align-items:center;gap:7px;font-size:11px;font-weight:700;color:var(--primary);margin-top:22px;}
 .iv-band {display:grid;grid-template-columns:1fr 1fr;gap:65px;background:var(--secondary);align-items:center;}
 .iv-photo {width:100%;height:350px;object-fit:cover;border-radius:8px;}
+.iv-service-photo {height:auto;aspect-ratio:1;object-fit:contain;}
 .iv-copy .eyebrow {margin-bottom:14px;}
 .iv-copy p {font-size:14px;line-height:1.9;color:var(--muted-foreground);margin:20px 0;}
 .inline-checks {display:flex;gap:18px;font-size:11px;font-weight:600;flex-wrap:wrap;margin-bottom:25px;}
@@ -239,7 +240,8 @@ a,button { -webkit-tap-highlight-color: transparent; }
 
 html { scroll-behavior:smooth; scroll-padding-top:120px; }
 .navigation-float { position:sticky; top:16px; z-index:50; margin:16px 24px 20px; background:var(--background); border:1px solid var(--border); border-radius:16px; box-shadow:var(--floating-shadow); transition:box-shadow 250ms ease, transform 250ms ease; }
-.navigation-float .site-header {height:82px;padding:0 24px;gap:20px;}
+.navigation-float .site-header {height:60px;padding:0 24px;gap:20px;}
+.navigation-float .header-book {height:40px;min-height:40px;}
 .desktop-nav a {position:relative;padding:12px 0;}
 .desktop-nav a:after {content:'';position:absolute;left:0;right:0;bottom:6px;height:1px;background:var(--primary);transform:scaleX(0);transform-origin:left;transition:transform 250ms ease;}
 .desktop-nav a:hover:after,.desktop-nav a[data-status="active"]:after {transform:scaleX(1);}
@@ -262,8 +264,8 @@ html { scroll-behavior:smooth; scroll-padding-top:120px; }
 .practice-button svg.lucide-arrow-right,.practice-button svg.lucide-arrow-up-right {transform:translateX(0);}
 .practice-button:focus-visible,a:focus-visible {outline:2px solid var(--ring);outline-offset:4px;}
 .button-outline {border-color:var(--border);}
-.wellness-feature {padding-top:82px;padding-bottom:82px;grid-template-columns:1.05fr 1fr;}
-.wellness-feature .iv-photo {height:520px;object-position:center;}
+.wellness-feature {padding-top:88px;padding-bottom:88px;grid-template-columns:1.2fr 1fr;}
+.wellness-feature .iv-photo {height:640px;object-position:center;}
 .wellness-feature h2 {font-size:40px;}
 .wellness-feature .iv-copy p {font-size:15px;}
 .site-footer {display:block;padding:64px 65px 28px;border-radius:0 0 24px 24px;background:var(--background);}
@@ -290,6 +292,6 @@ html { scroll-behavior:smooth; scroll-padding-top:120px; }
 }
 @media(max-width:1100px){.navigation-float{margin:14px 16px 18px;}.navigation-float .site-header{padding:0 20px;}.desktop-nav{gap:16px;}.footer-top{gap:36px;}.site-footer{padding:55px 38px 28px;}.wellness-feature{gap:35px;}.wellness-feature h2{font-size:34px;}}
 @media(max-width:900px){.desktop-nav{display:none;}.mobile-menu-button{display:inline-flex;}.mobile-nav a{min-height:44px;display:flex;align-items:center;}.mobile-nav{max-height:calc(100dvh - 130px);overflow-y:auto;gap:4px;}}
-@media(max-width:760px){.navigation-float{top:10px;margin:10px 10px 14px;border-radius:12px;}.navigation-float .site-header{height:72px;padding:0 14px;}.hero{min-height:560px;}.hero:after{background:linear-gradient(90deg,var(--hero-wash),var(--hero-mobile-wash) 100%);}.wellness-feature{padding:48px 24px;grid-template-columns:1fr;}.wellness-feature .iv-photo{height:auto;aspect-ratio:4/5;max-height:520px;}.wellness-feature h2{font-size:30px;}.site-footer{padding:44px 24px 24px;border-radius:0;}.footer-top{grid-template-columns:1fr;gap:32px;}.footer-map{height:330px;}.footer-bottom{flex-direction:column;margin-top:32px;}.footer-bottom nav{gap:20px;}.practice-button{min-height:48px;}.mobile-menu-button{width:48px;}html{scroll-padding-top:105px;}}
+@media(max-width:760px){.navigation-float{top:10px;margin:10px 10px 14px;border-radius:12px;}.navigation-float .site-header{height:60px;padding:0 14px;}.hero{min-height:560px;}.hero:after{background:linear-gradient(90deg,var(--hero-wash),var(--hero-mobile-wash) 100%);}.wellness-feature{padding:48px 24px;grid-template-columns:1fr;}.wellness-feature .iv-photo{height:auto;aspect-ratio:4/5;max-height:600px;}.wellness-feature h2{font-size:30px;}.site-footer{padding:44px 24px 24px;border-radius:0;}.footer-top{grid-template-columns:1fr;gap:32px;}.footer-map{height:330px;}.footer-bottom{flex-direction:column;margin-top:32px;}.footer-bottom nav{gap:20px;}.practice-button{min-height:48px;}.mobile-menu-button{width:48px;}html{scroll-padding-top:105px;}}
 @media(hover:none){.service-card:hover{transform:none;border-color:var(--border);}.desktop-nav a:hover:after{transform:scaleX(0);}.desktop-nav a[data-status="active"]:after{transform:scaleX(1);}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto;}*,*:before,*:after{animation:none!important;transition:none!important;}.scroll-reveal{opacity:1;transform:none;}.practice-button:hover,.navigation-float:hover,.practice-button:active,.practice-button:hover svg,.service-card:hover,.service-card:hover .service-link svg{transform:none;}}
