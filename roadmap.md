@@ -11,3 +11,4 @@
 
 - [x] Match favicon to the live logo and animate the two doctor background entries.
 - [x] Optimize images and verify all pages at phone, tablet, and desktop sizes.
+- [x] Replace homepage, IV page, and doctor photos with the requested uploads; add and verify the supplied IV therapy prices.

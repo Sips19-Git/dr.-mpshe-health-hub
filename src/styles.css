@@ -202,7 +202,7 @@ a,button { -webkit-tap-highlight-color: transparent; }
 .service-link {display:flex;align-items:center;gap:7px;font-size:11px;font-weight:700;color:var(--primary);margin-top:22px;}
 .iv-band {display:grid;grid-template-columns:1fr 1fr;gap:65px;background:var(--secondary);align-items:center;}
 .iv-photo {width:100%;height:350px;object-fit:cover;border-radius:8px;}
-.iv-service-photo {height:auto;aspect-ratio:1;object-fit:contain;}
+.iv-service-photo {height:auto;aspect-ratio:443/590;object-fit:cover;}
 .iv-copy .eyebrow {margin-bottom:14px;}
 .iv-copy p {font-size:14px;line-height:1.9;color:var(--muted-foreground);margin:20px 0;}
 .inline-checks {display:flex;gap:18px;font-size:11px;font-weight:600;flex-wrap:wrap;margin-bottom:25px;}
@@ -305,7 +305,7 @@ img {max-width:100%;}
 .iv-band,.doctor-preview,.contact-grid,.footer-top {grid-template-columns:minmax(0,1fr) minmax(0,1fr);}
 .iv-copy,.doctor-preview > div,.footer-details,.detail-item,.service-entry-content {min-width:0;}
 .detail-item p,.section-intro,.contact-row p,.footer-details > a {overflow-wrap:anywhere;}
-.doctor-photo {height:auto;aspect-ratio:432/568;max-height:520px;}
+.doctor-photo {height:auto;aspect-ratio:408/612;max-height:612px;}
 @media(max-width:900px) {
  .site-header {display:grid;grid-template-columns:minmax(0,1fr) auto;}
  .header-actions {flex-shrink:0;}
@@ -313,7 +313,7 @@ img {max-width:100%;}
 }
 @media(max-width:760px) {
  .iv-band,.footer-top {grid-template-columns:minmax(0,1fr);}
- .iv-service-photo {height:auto;aspect-ratio:1;}
+ .iv-service-photo {height:auto;aspect-ratio:443/590;}
  .hero-buttons {display:grid;grid-template-columns:minmax(0,1fr);max-width:300px;}
  .hero-buttons .practice-button {width:100%;}
  .section-heading {flex-wrap:wrap;}
@@ -335,6 +335,12 @@ img {max-width:100%;}
 }
 .service-entry:focus-within::before {opacity:.55;}
 .service-entry:focus-within h3 {color:var(--primary);}
+.iv-price-list {margin-top:28px;}
+.iv-price-row {display:flex;justify-content:space-between;align-items:center;gap:20px;}
+.iv-price-row h3 {margin-bottom:0;}
+.iv-price-row p {margin-top:6px;}
+.iv-price {white-space:nowrap;color:var(--primary);font-size:18px;font-weight:700;font-variant-numeric:tabular-nums;}
+@media(max-width:400px){.iv-price-row{gap:12px;}.iv-price-row h3{font-size:16px;}.iv-price{font-size:16px;}}
 @media(prefers-reduced-motion:reduce) {
  .service-entry-content,.service-entry::after {transform:none;}
 }

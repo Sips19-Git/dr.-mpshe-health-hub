@@ -1,19 +1,18 @@
 import type { ImgHTMLAttributes } from 'react';
-import heroSmall from '@/assets/hero-480.webp.asset.json';
-import heroMedium from '@/assets/hero-960.webp.asset.json';
-import heroLarge from '@/assets/hero-1440.webp.asset.json';
+import heroSmall from '@/assets/home-coat-480.webp.asset.json';
+import heroLarge from '@/assets/home-coat-768.webp.asset.json';
 import wellnessSmall from '@/assets/wellness-400.webp.asset.json';
 import wellnessLarge from '@/assets/wellness-800.webp.asset.json';
-import ivSmall from '@/assets/iv-400.webp.asset.json';
-import ivLarge from '@/assets/iv-800.webp.asset.json';
-import doctorSmall from '@/assets/doctor-400.webp.asset.json';
-import doctorLarge from '@/assets/doctor-800.webp.asset.json';
+import ivSmall from '@/assets/iv-room-320.webp.asset.json';
+import ivLarge from '@/assets/iv-room-443.webp.asset.json';
+import doctorSmall from '@/assets/doctor-portrait-300.webp.asset.json';
+import doctorLarge from '@/assets/doctor-portrait-408.webp.asset.json';
 
 const images = {
-  hero: { src: heroLarge.url, srcSet: `${heroSmall.url} 480w, ${heroMedium.url} 900w`, width: 900, height: 1200 },
+  hero: { src: heroLarge.url, srcSet: `${heroSmall.url} 480w, ${heroLarge.url} 768w`, width: 768, height: 1024 },
   wellness: { src: wellnessLarge.url, srcSet: `${wellnessSmall.url} 400w, ${wellnessLarge.url} 736w`, width: 736, height: 920 },
-  iv: { src: ivLarge.url, srcSet: `${ivSmall.url} 400w, ${ivLarge.url} 800w`, width: 1200, height: 1200 },
-  doctor: { src: doctorLarge.url, srcSet: `${doctorSmall.url} 400w, ${doctorLarge.url} 432w`, width: 432, height: 568 },
+  iv: { src: ivLarge.url, srcSet: `${ivSmall.url} 320w, ${ivLarge.url} 443w`, width: 443, height: 590 },
+  doctor: { src: doctorLarge.url, srcSet: `${doctorSmall.url} 300w, ${doctorLarge.url} 408w`, width: 408, height: 612 },
 };
 
 export function PracticeImage({ image, ...props }: ImgHTMLAttributes<HTMLImageElement> & { image: keyof typeof images }) {
