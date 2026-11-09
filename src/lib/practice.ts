@@ -18,6 +18,21 @@ export const services = [
   { title: 'IV drip services', description: 'Doctor-assessed IV drip services where clinically appropriate. Discuss your needs, suitability and available options with the practice.' },
 ];
 
+export const ivTherapies = [
+  { name: 'Skin glow', price: 1000 },
+  { name: 'Sinus & allergy support', price: 500 },
+  { name: 'Immune booster', price: 550 },
+  { name: 'Weight loss support', price: 1000, note: 'Includes consultation & review' },
+  { name: 'Antioxidant', price: 1000 },
+  { name: 'Libido / sexual health', price: 1500 },
+  { name: 'Energy booster', price: 650 },
+  { name: 'Detox drip', price: 1300, note: '4 drips' },
+  { name: 'Event recovery', price: 500 },
+  { name: 'General booster', price: 500 },
+  { name: 'Hair & nail support', price: 600 },
+  { name: 'Ultimate hydration', price: 450 },
+];
+
 export function pageHead(title: string, description: string) {
   return { meta: [
     { title: `${title} | Dr E. L. Mpshe Surgery` },
