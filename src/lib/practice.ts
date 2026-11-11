@@ -3,6 +3,8 @@ export const practice = {
   doctor: 'Dr Letlhogonolo Mpshe',
   phone: '+27 18 061 0069',
   phoneHref: 'tel:+27180610069',
+  landline: '018 061 0069',
+  landlineHref: 'tel:0180610069',
   email: 'drelmpshe@gmail.com',
   address: '10 Tillard Street, Golf View, 2745',
   location: 'Mahikeng, North West, South Africa',

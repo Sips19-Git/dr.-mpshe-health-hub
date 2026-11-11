@@ -6,6 +6,10 @@ describe('Verified practice contact details', () => {
     expect(practice.phone).toBe('+27 18 061 0069');
     expect(practice.phoneHref).toBe('tel:+27180610069');
   });
+  it('shows the landline exactly as provided by the user', () => {
+    expect(practice.landline).toBe('018 061 0069');
+    expect(practice.landlineHref).toBe('tel:0180610069');
+  });
   it('uses the user-provided street address', () => {
     expect(practice.address).toBe('10 Tillard Street, Golf View, 2745');
   });

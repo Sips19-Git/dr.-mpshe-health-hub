@@ -12,3 +12,5 @@
 - [x] Match favicon to the live logo and animate the two doctor background entries.
 - [x] Optimize images and verify all pages at phone, tablet, and desktop sizes.
 - [x] Replace homepage, IV page, and doctor photos with the requested uploads; add and verify the supplied IV therapy prices.
+- [x] Store the eight photos as real project files and switch the map to an own-key setting for standalone deployment.
+- [x] Show the landline 018 061 0069 on the contact page as its own callable row.
