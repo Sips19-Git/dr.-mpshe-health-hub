@@ -14,3 +14,4 @@
 - [x] Replace homepage, IV page, and doctor photos with the requested uploads; add and verify the supplied IV therapy prices.
 - [x] Store the eight photos as real project files and switch the map to an own-key setting for standalone deployment.
 - [x] Show the landline 018 061 0069 on the contact page as its own callable row.
+- [x] Add WhatsApp 082 768 0351 and the landline across contact page, navigation, call band, and footer; fix the scroll-reveal hydration mismatch.
