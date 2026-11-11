@@ -1,6 +1,6 @@
 import { Link } from '@tanstack/react-router';
 import { useState } from 'react';
-import { ArrowUpRight, ArrowRight, Phone, Menu, X, Stethoscope, MapPin } from 'lucide-react';
+import { ArrowUpRight, ArrowRight, Phone, Menu, X, Stethoscope, MapPin, MessageCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { practice } from '@/lib/practice';
 import { PracticeMap } from '@/components/practice-map';
