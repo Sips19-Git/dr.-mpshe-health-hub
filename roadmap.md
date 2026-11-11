@@ -15,3 +15,4 @@
 - [x] Store the eight photos as real project files and switch the map to an own-key setting for standalone deployment.
 - [x] Show the landline 018 061 0069 on the contact page as its own callable row.
 - [x] Add WhatsApp 082 768 0351 and the landline across contact page, navigation, call band, and footer; fix the scroll-reveal hydration mismatch.
+- [x] Remove the navbar WhatsApp icon, the contact page "Call the practice" row, and the main number from the home page call band.
