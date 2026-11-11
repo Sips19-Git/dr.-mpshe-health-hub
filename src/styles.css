@@ -267,7 +267,6 @@ html { scroll-behavior:smooth; scroll-padding-top:120px; }
 .contact-band-actions {display:flex;gap:12px;flex-wrap:wrap;}
 .band-whatsapp {background:transparent;color:var(--primary-foreground);border-color:color-mix(in oklab, var(--primary-foreground) 45%, transparent);}
 .band-whatsapp:hover {background:color-mix(in oklab, var(--primary-foreground) 14%, transparent);border-color:var(--primary-foreground);}
-.navigation-float .header-whatsapp {height:40px;width:40px;min-height:40px;padding:0;}
 .wellness-feature {padding-top:88px;padding-bottom:88px;grid-template-columns:1.2fr 1fr;}
 .wellness-feature .iv-photo {height:640px;object-position:center;}
 .wellness-feature h2 {font-size:40px;}

@@ -13,7 +13,7 @@ export function Brand({ uploaded = false }: { uploaded?: boolean }) {
 export function SiteHeader() {
   const [open, setOpen] = useState(false);
   const links = <><Link to="/" activeOptions={{ exact: true }} onClick={() => setOpen(false)}>Home</Link><Link to="/services" onClick={() => setOpen(false)}>Our services</Link><Link to="/iv-drips" onClick={() => setOpen(false)}>IV drips</Link><Link to="/about" onClick={() => setOpen(false)}>Meet the doctor</Link><Link to="/contact" onClick={() => setOpen(false)}>Contact</Link></>;
-  return <div className="navigation-float"><header className="site-header"><Brand uploaded /><nav className="desktop-nav" aria-label="Main navigation">{links}</nav><div className="header-actions"><Button asChild variant="outline" size="icon" className="header-whatsapp"><a href={practice.whatsappHref} target="_blank" rel="noreferrer" aria-label={`Message the practice on WhatsApp at ${practice.whatsapp}`}><MessageCircle /></a></Button><Button asChild size="lg" className="header-book"><a href={practice.phoneHref}>Book a visit <ArrowUpRight /></a></Button><Button variant="ghost" size="icon" className="mobile-menu-button" aria-label={open ? 'Close menu' : 'Open menu'} aria-expanded={open} onClick={() => setOpen(!open)}>{open ? <X /> : <Menu />}</Button></div></header>{open && <nav className="mobile-nav" aria-label="Mobile navigation">{links}<a href={practice.phoneHref}>Call to book a visit</a><a href={practice.whatsappHref} target="_blank" rel="noreferrer">WhatsApp {practice.whatsapp}</a></nav>}</div>;
+  return <div className="navigation-float"><header className="site-header"><Brand uploaded /><nav className="desktop-nav" aria-label="Main navigation">{links}</nav><div className="header-actions"><Button asChild size="lg" className="header-book"><a href={practice.phoneHref}>Book a visit <ArrowUpRight /></a></Button><Button variant="ghost" size="icon" className="mobile-menu-button" aria-label={open ? 'Close menu' : 'Open menu'} aria-expanded={open} onClick={() => setOpen(!open)}>{open ? <X /> : <Menu />}</Button></div></header>{open && <nav className="mobile-nav" aria-label="Mobile navigation">{links}<a href={practice.phoneHref}>Call to book a visit</a><a href={practice.whatsappHref} target="_blank" rel="noreferrer">WhatsApp {practice.whatsapp}</a></nav>}</div>;
 }
 
 export function Eyebrow({ children }: { children: React.ReactNode }) {
@@ -25,7 +25,7 @@ export function CallButton({ children = 'Book a consultation' }: { children?: Re
 }
 
 export function ContactBand() {
-  return <section className="section contact-band"><div><h2>Your next step to better health.</h2><p>Let’s make time for you. Call the practice to arrange your visit.</p></div><div className="contact-band-actions"><Button asChild variant="inverse" size="lg"><a href={practice.phoneHref}><Phone />{practice.phone}<ArrowUpRight /></a></Button><Button asChild variant="inverse" size="lg" className="band-whatsapp"><a href={practice.whatsappHref} target="_blank" rel="noreferrer"><MessageCircle />WhatsApp {practice.whatsapp}<ArrowUpRight /></a></Button></div></section>;
+  return <section className="section contact-band"><div><h2>Your next step to better health.</h2><p>Let’s make time for you. Call the practice to arrange your visit.</p></div><div className="contact-band-actions"><Button asChild variant="inverse" size="lg" className="band-whatsapp"><a href={practice.whatsappHref} target="_blank" rel="noreferrer"><MessageCircle />WhatsApp {practice.whatsapp}<ArrowUpRight /></a></Button></div></section>;
 }
 
 export function SiteFooter() {
