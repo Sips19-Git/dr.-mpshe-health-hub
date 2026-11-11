@@ -5,6 +5,8 @@ export const practice = {
   phoneHref: 'tel:+27180610069',
   landline: '018 061 0069',
   landlineHref: 'tel:0180610069',
+  whatsapp: '082 768 0351',
+  whatsappHref: 'https://wa.me/27827680351',
   email: 'drelmpshe@gmail.com',
   address: '10 Tillard Street, Golf View, 2745',
   location: 'Mahikeng, North West, South Africa',

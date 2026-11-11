@@ -13,7 +13,6 @@ import { useEffect, type ReactNode } from "react";
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import { SiteHeader, SiteFooter } from '@/components/practice-site';
-import { ScrollReveals } from '@/components/scroll-reveals';
 
 function NotFoundComponent() {
   return (
@@ -122,7 +121,7 @@ function RootComponent() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <div className="site-frame"><SiteHeader /><main><Outlet /></main><SiteFooter /><ScrollReveals /></div>
+      <div className="site-frame"><SiteHeader /><main><Outlet /></main><SiteFooter /></div>
     </QueryClientProvider>
   );
 }

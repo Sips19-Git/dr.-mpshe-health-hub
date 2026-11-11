@@ -10,6 +10,10 @@ describe('Verified practice contact details', () => {
     expect(practice.landline).toBe('018 061 0069');
     expect(practice.landlineHref).toBe('tel:0180610069');
   });
+  it('shows the WhatsApp number exactly as provided by the user', () => {
+    expect(practice.whatsapp).toBe('082 768 0351');
+    expect(practice.whatsappHref).toBe('https://wa.me/27827680351');
+  });
   it('uses the user-provided street address', () => {
     expect(practice.address).toBe('10 Tillard Street, Golf View, 2745');
   });
