@@ -7,6 +7,7 @@ This website is for Dr E. L. Mpshe Surgery, a General Practitioner (GP) who offe
 Include general practitioner services and activities such as general health consultations, routine medical check-ups, diagnosis and treatment of common illnesses, health screenings, blood pressure monitoring, diabetes screening and management, minor wound care, preventive healthcare, health advice, wellness assessments, prescription management, referrals to specialists when necessary, and IV drip services, where appropriate.
 
 Incorporate the doctor's information and services into the website.  IV Drip, IV Drip 
+Website: https://msphe-health-hub.netlify.app/
 
 General Practitioner (GP)
 
@@ -14,11 +15,11 @@ Telephone: +27 18 061 0069
 Address: 10 Tillard Street, Golf View, 2745
 Location: Mahikeng, Mafikeng Local Municipality, North West, South Africa
 
-This project was built with [Lovable](https://lovable.dev).
+
 
 ## Build with Lovable
 
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/a3cea442-810d-4bcb-b66b-a92e7fa8de04).
+
 
 - **Ship faster**: describe what you want to build and Lovable handles the code.
 - **Stay in sync**: every change made in Lovable is committed straight to this repository.
